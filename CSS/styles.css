@@ -35,12 +35,25 @@
     padding-bottom: 5px;
 }
 
+.login_and_register {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 1080px;
+}
+
 .left_panel {
     background-color: #008F8C;
     color: #D8FFDB;
     padding: 20px 10px 20px 20px;
     display: flex;
     flex-direction: column;
+    min-width: 10%;
+}
+
+.nav {
+    margin-bottom: 20px;
 }
 
 a {
@@ -54,6 +67,20 @@ a:visited {
 a:hover {
     color: #D8FFDB;
     background: #008F8C;
+}
+
+.left_panel_element {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.left_panel_element:hover {
+    background: #023535;
+}
+
+.active_element {
+    background: #00AF8C;
+    border-left: 2px solid #00CF8C;
 }
 
 .code {
@@ -72,6 +99,12 @@ a:hover {
     text-align: center;
     color: #C7FFED;
     font-size: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.load_time {
+    margin: 0;
 }
 
 .image_in_text {

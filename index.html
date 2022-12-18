@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="blog,itmo,web,mintee">
     <meta name="description" content="Mintee - мой блог. В будущем тут также будут блоги других людей">
+    <script src="Scripts/load_time.js"></script>
+    <script src="Scripts/current_page.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -14,31 +16,37 @@
     <main class="main">
       <div class="left_panel">
         <nav class="nav">
-          <a href="#st">Статья дня</a> <br>
-          <a href="#ka">Картинка дня</a> <br>
-          <a href="#ri">Рисунок дня</a> <br>
-          <a href="#al">Алгоритм дня</a>
-          <a href="#ta">Таблица дня</a>
+          <div class="left_panel_element">
+            <a href="index.html">Главная страница</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="login.html">Страница входа</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="register.html">Страница регистрации</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#">Все блоги</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#">Новые посты</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#st">Статья дня</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#ka">Картинка дня</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#ri">Рисунок дня</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#al">Алгоритм дня</a> <br>
+          </div>
+          <div class="left_panel_element">
+            <a href="#ta">Таблица дня</a> <br>
+          </div>
         </nav>
-        <aside class="aside">
-          <h4><del>Интересные</del> факты</h4>
-          <ol>
-            <li>Этот блок потом будет вылезать сбоку по кнопке</li>
-            <li>Этот сайт на русском языке</li>
-            <li>На этом сайте нет букв:
-            <ul>
-              <li>Ъ</li>
-              <li>Ї</li>
-              <li>Ў</li>
-            </ul>
-            </li>
-          </ol>
-          <ol start="5">
-            <li>Номера 4 нет</li>
-            <li>Моя формула успеха: (a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup></li>
-            <li>Пейте больше H<sub>2</sub>O и меньше C<sub>2</sub>H<sub>5</sub>OH</li>
-          </ol>
-        </aside>
       </div>
       <div class="main_elements">
       <article class="section">
@@ -243,12 +251,14 @@
     </main>
     <footer class="footer">
       <p>Сайт Mintee. Copyright lvvnv 2022 - 2022. Мой tg: <a href="https://t.me/lvvnv">@lvvnv</a></p>
+      <div class="load_time">
+      </div>
     </footer>
     <div class="log_in_button">
-      <a href="#" title="Войти">Войти</a>
+      <a href="login.html" title="Войти">Войти</a>
     </div>
     <div class="register_button">
-      <a href="#" title="Зарегистрироваться">Зарегистрироваться</a>
+      <a href="register.html" title="Зарегистрироваться">Зарегистрироваться</a>
     </div>
   </body>
 </html>
