@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Mintee</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="blog,itmo,web,mintee">
+    <meta name="description" content="Mintee - мой блог. В будущем тут также будут блоги других людей">
+    <script src="Scripts/load_time.js"></script>
+    <script src="Scripts/current_page.js"></script>
+    <script src="Scripts/show_posts.js"></script>
+</head>
+<body class="body">
+<header class="header">
+    <img src="Resources/logo.png" alt="Mintee" class="image_in_header">
+</header>
+<main class="main">
+    <div class="left_panel">
+        <nav class="nav">
+            <div class="left_panel_element">
+                <a href="index.html">Главная страница</a> <br>
+            </div>
+            <div class="left_panel_element">
+                <a href="login.html">Страница входа</a> <br>
+            </div>
+            <div class="left_panel_element">
+                <a href="register.html">Страница регистрации</a> <br>
+            </div>
+            <div class="left_panel_element">
+                <a href="my_posts.html">Мои посты</a> <br>
+            </div>
+        </nav>
+    </div>
+    <div class="main_elements">
+        <section class="new_post_section">
+            <h2>Новый пост</h2>
+            <form class="new_post">
+                <label for="post-name">Название</label>
+                <input id="post-name" type="text" name="post-name" size="50">
+                <label for="post-text">Текст</label>
+                <textarea id="post-text" name="post-text" rows="10"></textarea>
+                <input type="submit" value="Опубликовать">
+                <input type="submit" value="Удалить все посты" onclick="deletePosts();">
+            </form>
+        </section>
+        <div class="all_posts">
+        </div>
+
+    </div>
+</main>
+<footer class="footer">
+    <p>Сайт Mintee. Copyright lvvnv 2022 - 2022. Мой tg: <a href="https://t.me/lvvnv">@lvvnv</a></p>
+    <div class="load_time" id="load_time">
+        <p>Время загрузки страницы:</p>
+    </div>
+</footer>
+</body>
+</html>

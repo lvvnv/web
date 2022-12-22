@@ -1,6 +1,6 @@
 .body {
-    font-family: Arial, serif;
-    font-size: medium;
+    font-family: Corbel, serif;
+    font-size: large;
     background-color: #C7FFED;
     line-height: 150%;
     font-weight: normal;
@@ -33,6 +33,7 @@
     flex-direction: column;
     padding-top: 5px;
     padding-bottom: 5px;
+    min-height: 1080px;
 }
 
 .login_and_register {
@@ -66,7 +67,6 @@ a:visited {
 
 a:hover {
     color: #D8FFDB;
-    background: #008F8C;
 }
 
 .left_panel_element {
@@ -182,4 +182,30 @@ a:hover {
 
 .table tr:nth-child(2n){
     background: #D8FFDB;
+}
+
+.new_post {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.new_post_section {
+    background-color: #D8FFDB;
+    margin: 5px 10px;
+    padding: 20px;
+    min-width: 1080px;
+}
+
+.all_posts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.post_content {
+    background-color: #D8FFDB;
+    margin: 5px 10px;
+    padding: 20px;
 }
