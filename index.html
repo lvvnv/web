@@ -11,63 +11,61 @@
   </head>
   <body class="body">
     <header class="header">
-      <img src="Resources/logo.png" alt="Mintee" class="image_in_header">
+      <img src="Resources/logo.png" alt="Mintee" class="header__logo">
     </header>
     <main class="main">
-      <div class="left_panel">
-        <nav class="nav">
-          <div class="left_panel_element">
+      <div class="menu__structure">
+          <div class="menu__item">
             <a href="index.html">Главная страница</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="login.html">Страница входа</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="register.html">Страница регистрации</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="my_posts.html">Мои посты</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="recent_posts.html">Недавние посты</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="#st">Статья дня</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="#ka">Картинка дня</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="#ri">Рисунок дня</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="#al">Алгоритм дня</a> <br>
           </div>
-          <div class="left_panel_element">
+          <div class="menu__item">
             <a href="#ta">Таблица дня</a> <br>
           </div>
-        </nav>
       </div>
-      <div class="main_elements">
-      <article class="section">
+      <div class="content__structure">
+      <article class="content__section">
         <p><a id="st"></a></p>
         <h2>Статья дня</h2>
-        <p class="underline">
+        <p class="content__text_underline">
           <b><i>Зенит</i></b> — советский и российский профессиональный футбольный клуб из Санкт-Петербурга, выступающий в премьер-лиге. Чемпион СССР 1984, восьмикратный чемпион России, обладатель Кубка СССР 1944, четырёхкратный обладатель Кубка России, обладатель Кубка сезона 1985, семикратный обладатель Суперкубка России, обладатель Кубка Премьер-лиги 2003, обладатель Кубка УЕФА 2007/08, обладатель Суперкубка УЕФА 2008.
         </p>
       </article>
-      <section class="section">
+      <section class="content__section">
         <p><a id="ka"></a></p>
         <h2>Картинка дня</h2>
-        <img src="Resources/image.jpg" class="image_in_text" alt="Картинка дня">
-        <div class="image_replace">
+        <img src="Resources/image.jpg" class="content__image" alt="Картинка дня">
+        <div class="content__image_replace">
           <p>Экран слишком узкий для этой картинки</p>
         </div>
       </section>
-      <section class="section">
+      <section class="content__section">
         <p><a id="ri"></a></p>
         <h2>Рисунок дня</h2>
-          <pre class="pre">
+          <pre class="content__text_preformatted">
 .==============================================.
 |                                              |
 |                           .'\                |
@@ -101,11 +99,11 @@
 '=============================================='
           </pre>
       </section>
-      <section class="section">
+      <section class="content__section">
         <p><a id="al"></a></p>
         <h2>Алгоритм дня</h2>
         <p><i>Поиск компонент связности</i></p>
-        <p class="code"><code>
+        <p class="content__text_code"><code>
           void DFS(bool *visited, int vertex, vector &lt;vector &lt;int&gt; &gt; &matrix, int *comp, int compon_num){<br>
           visited[vertex] = true;<br>
           comp[vertex] = compon_num;<br>
@@ -119,11 +117,11 @@
           }<br>
         </code></p>
       </section>
-      <section class="section">
+      <section class="content__section">
         <p><a id="ta"></a></p>
         <h2>Таблица дня</h2>
         <p><i>Таблица коэффициентов УЕФА</i></p>
-        <table class="table">
+        <table class="content__table">
           <tr>
             <th>№</th>
             <th>Страна</th>
@@ -251,13 +249,13 @@
     </main>
     <footer class="footer">
       <p>Сайт Mintee. Copyleft lvvnv 1022 - 1122. Мой tg: <a href="https://t.me/lvvnv">@lvvnv</a></p>
-      <div class="load_time">
+      <div class="footer__item_time">
       </div>
     </footer>
-    <div class="log_in_button">
+    <div class="header__button_login">
       <a href="login.html" title="Войти">Войти</a>
     </div>
-    <div class="register_button">
+    <div class="header__button_register">
       <a href="register.html" title="Зарегистрироваться">Зарегистрироваться</a>
     </div>
   </body>

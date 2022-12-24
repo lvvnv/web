@@ -16,9 +16,9 @@ function loadPosts() {
 }
 
 function showPost(post) {
-    let all_posts = document.querySelector(".all_posts");
+    let all_posts = document.querySelector(".content__section_generated");
     let newPost = `
-    <section class='post_content'>
+    <section class='content__section_post'>
     <h2>${post.name}</h2>
     <p>${post.text}</p>
     </section>
@@ -27,7 +27,7 @@ function showPost(post) {
 }
 
 function handleForm() {
-    let formElement = document.querySelector('.new_post');
+    let formElement = document.querySelector('.content__form');
     formElement.addEventListener('submit', e => {
         e.preventDefault();
 
@@ -51,7 +51,7 @@ function handleForm() {
 function deletePosts() {
     posts = [];
     localStorage.setItem('posts', null);
-    let all_posts = document.querySelector(".all_posts");
+    let all_posts = document.querySelector(".content__section_generated");
     all_posts.innerHTML = '';
 }
 

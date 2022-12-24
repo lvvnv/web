@@ -12,32 +12,30 @@
 </head>
 <body class="body">
 <header class="header">
-    <img src="Resources/logo.png" alt="Mintee" class="image_in_header">
+    <img src="Resources/logo.png" alt="Mintee" class="header__logo">
 </header>
 <main class="main">
-    <div class="left_panel">
-        <nav class="nav">
-            <div class="left_panel_element">
+    <div class="menu__structure">
+            <div class="menu__item">
                 <a href="index.html">Главная страница</a> <br>
             </div>
-            <div class="left_panel_element">
+            <div class="menu__item">
                 <a href="login.html">Страница входа</a> <br>
             </div>
-            <div class="left_panel_element">
+            <div class="menu__item">
                 <a href="register.html">Страница регистрации</a> <br>
             </div>
-            <div class="left_panel_element">
+            <div class="menu__item">
                 <a href="my_posts.html">Мои посты</a> <br>
             </div>
-            <div class="left_panel_element">
+            <div class="menu__item">
                 <a href="recent_posts.html">Недавние посты</a> <br>
             </div>
-        </nav>
     </div>
-    <div class="main_elements">
-        <section class="new_post_section">
+    <div class="content__structure">
+        <section class="content__section_publish">
             <h2>Новый пост</h2>
-            <form class="new_post">
+            <form class="content__form">
                 <label for="post-name">Название</label>
                 <input id="post-name" type="text" name="post-name" size="50">
                 <label for="post-text">Текст</label>
@@ -46,12 +44,12 @@
                 <input type="submit" value="Удалить все посты" onclick="deletePosts();">
             </form>
         </section>
-        <div class="all_posts"></div>
+        <div class="content__section_generated"></div>
     </div>
 </main>
 <footer class="footer">
     <p>Сайт Mintee. Copyleft lvvnv 1022 - 1122. Мой tg: <a href="https://t.me/lvvnv">@lvvnv</a></p>
-    <div class="load_time">
+    <div class="footer__item_time">
     </div>
 </footer>
 </body>

@@ -2,7 +2,7 @@ let posts = []
 
 function createPost(post) {
    return `
-   <section class='post_content'>
+   <section class='content__section_post'>
        <h2>${post.title}</h2>
        <p>${post.body}</p>
    </div>
@@ -10,7 +10,7 @@ function createPost(post) {
 }
 
 function fillPostsList(posts) {
-    let pl = document.querySelector('.all_posts');
+    let pl = document.querySelector('.content__section_generated');
     if (posts.length > 0) {
         posts.forEach((post) => {
             pl.innerHTML += createPost(post);
@@ -40,11 +40,11 @@ function getPostRequest() {
         .then((res) => res.json())
         .then((new_posts) =>  {
             posts = posts.concat(new_posts);
-            document.querySelector(".preloader").style.display = "none";
+            document.querySelector(".content__image_preloader").style.display = "none";
         })
         .catch(function (error) {
-            document.querySelector(".preloader").style.display = "none";
-            document.querySelector(".error").style.display = "contents";
+            document.querySelector(".content__image_preloader").style.display = "none";
+            document.querySelector(".content__text_error").style.display = "contents";
             console.log(error);
         })
 }
