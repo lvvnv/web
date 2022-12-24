@@ -1,4 +1,5 @@
 let posts = []
+
 function addPost(post) {
     posts.push(post);
     showPost(post);

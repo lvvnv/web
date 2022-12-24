@@ -9,6 +9,7 @@
   <meta name="description" content="Mintee">
   <script src="Scripts/load_time.js"></script>
   <script src="Scripts/current_page.js"></script>
+  <script src="Scripts/recent_posts.js"></script>
 </head>
 <body class="body">
 <header class="header">
@@ -34,21 +35,12 @@
       </div>
     </nav>
   </div>
-  <div class="login_and_register">
-    <section class="section">
-      <h2>Войти</h2>
-      <form>
-        <p><b>Логин:</b>
-          <label>
-            <input maxlength="25" size="40" name="login">
-          </label></p>
-        <p><b>Пароль:</b>
-          <label>
-            <input type="password" maxlength="25" size="40" name="password">
-          </label></p>
-      </form>
-    </section>
+  <div class="main_elements">
+    <img src="Resources/loading.gif" class="preloader" alt="Загрузка">
+    <div class="error"><p>Ошибка: посты не загружены</p></div>
+    <div class="all_posts"></div>
   </div>
+
 </main>
 <footer class="footer">
   <p>Сайт Mintee. Copyleft lvvnv 1022 - 1122. Мой tg: <a href="https://t.me/lvvnv">@lvvnv</a></p>
